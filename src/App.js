@@ -46,6 +46,9 @@ function App() {
     // eslint-disable-next-line
   }, [selectedImporter, selectedImporter]);
 
+  const a = process.env.REACT_APP_AWS_REGION;
+  console.log(a);
+
   return (
     <SelectedYearContext.Provider value={{ selectedYear, setSelectedYear }}>
       <UserContext.Provider value={{ user, setUser }}>
