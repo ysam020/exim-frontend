@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import "~bootstrap/scss/bootstrap";
+
+// Variables
+$primary-color: #723efe;
+$secondary-color: #349bff;
+$background-color: rgba(249, 250, 251, 0.3);
+
+// Mixins
+@mixin gradient-background {
+  background-image: linear-gradient(
+    90deg,
+    $primary-color,
+    $secondary-color
+  ) !important;
+}
+
+// Styles
+.App {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+}
+
+/* Landing page navbar */
+.navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: $background-color;
+  backdrop-filter: blur(6px) !important;
+  z-index: 9999;
+  left: 0;
+  right: 0;
+
+  .navbar-left {
+    display: flex;
+    align-items: center;
+
+    h3 {
+      margin-left: 20px;
+      align-self: center;
+      margin-bottom: 0;
+      overflow: hidden !important;
+    }
+  }
+}
+
+// upload button in navbar
+.uploadBtn {
+  background-color: #273041;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.uploadBtn-mobile {
+  background-color: #f9fafb;
+  padding: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  display: none;
+  font-size: 14px;
+  border-radius: 8px;
+}
+
+/* Hide arrows from input type number */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* FAB */
+.fab {
+  box-shadow: none !important;
+  margin: 20px 0 !important;
+  @include gradient-background;
+}
+
+.modal-form-btn {
+  border: none;
+  outline: none;
+  @include gradient-background;
+  color: #fff !important;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  border-radius: 3px;
+  box-shadow: 2px 2px 50px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px;
+}
+
+/* Table */
+.table {
+  background-color: #fff;
+  border: none;
+}
+
+.MuiDataGrid-iconSeparator {
+  display: none !important;
+}
+
+/* Disable cell border on cell click */
+.MuiDataGrid-cell:focus-within,
+.MuiDataGrid-columnHeader:focus-within {
+  outline: none !important;
+}
+
+/* Center align table header text */
+.MuiDataGrid-columnHeaderTitleContainer,
+.MuiDataGrid-columnHeaderTitleContainerContent,
+.MuiDataGrid-columnHeaderTitle {
+  width: 100% !important;
+  text-align: center !important;
+}
+
+/* Reduce padding on icon button container */
+.MuiDataGrid-iconButtonContainer {
+  padding-right: 8px !important;
+}
+
+.MuiSelect-select.MuiSelect-outlined.MuiInputBase-input.MuiOutlinedInput-input.css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input {
+  padding: 8px;
+  padding-right: 30px;
+}
+
+/* Download Report Button */
+.download-report-btn {
+  background-color: #273041;
+  padding: 10px;
+  color: #fff;
+  border: none;
+  outline: none;
+  float: right;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .uploadBtn {
+    display: none;
+  }
+  .uploadBtn-mobile {
+    display: block;
+  }
+}
+
+.submit-form-btn {
+  background-color: #273041 !important;
+  margin-top: 10px !important;
+  color: #fff !important;
+  border-radius: 0% !important;
+}
+
+// Assign importe text field
+.MuiInputBase-root.MuiFilledInput-root.MuiFilledInput-underline.MuiInputBase-colorPrimary.MuiInputBase-fullWidth.MuiInputBase-formControl.MuiInputBase-sizeSmall {
+  height: 50px !important;
+}
+
+.css-pnvfe5-MuiFormLabel-root-MuiInputLabel-root {
+  padding-right: 5px !important;
+  background-color: #fff !important;
+}
+
+// DataGrid row min-height
+.MuiDataGrid-row.MuiDataGrid-row--dynamicHeight {
+  min-height: 50px !important;
+}
+
+// Tooltip
+.MuiTooltip-tooltip {
+  background-color: #273041 !important;
+}
+
+// Job list datagrid filter select
+.MuiInputBase-input,
+.MuiNativeSelect-select {
+  height: 30px !important;
+}
+
+// Job details page select tag
+.MuiSelect-select {
+  height: 35px !important;
+}
+
+// Register form fields
+.MuiInputBase-input {
+  height: 40px !important;
+}
+
+.MuiFormControl-root.css-78me8v-MuiFormControl-root {
+  margin: 0 !important;
+}
+
+.MuiInputBase-root {
+  height: 55px !important;
+}
+
+.uploadBtn-secondary {
+  background-color: #273041;
+  padding: 5px;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  margin: 10px 0;
+}

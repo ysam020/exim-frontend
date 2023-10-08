@@ -1,0 +1,71 @@
+/* Variables */
+$primary-color: #7637fe;
+
+/* Sidebar */
+$sidebar-width: 180px;
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: scroll;
+  position: fixed;
+}
+
+.MuiList-root.MuiList-padding.css-h4y409-MuiList-root::-webkit-scrollbar {
+  display: none !important;
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+  padding: 50px 10px;
+}
+
+.sidebar-list {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-listItem {
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  padding: 0 10px;
+  margin: 5px 0;
+  width: $sidebar-width;
+  font-size: 14px;
+  letter-spacing: 1px;
+  transition: all 0.2s ease-in-out;
+}
+
+.sidebar-link.active,
+.sidebar-link:hover {
+  color: #fff !important;
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  border-radius: 8px;
+  font-weight: 700;
+}
+
+.sidebar-link:hover {
+  color: #fff !important;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.04) !important;
+}
+
+.sidebar-link.active:hover {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+.sidebar-list-text {
+  margin-bottom: 0 !important;
+}
+
+.appbar-links {
+  padding: 0 !important;
+}

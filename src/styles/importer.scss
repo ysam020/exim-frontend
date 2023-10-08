@@ -1,0 +1,71 @@
+// Mixins
+@mixin flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+// Styles
+.importer {
+  padding: 15px 0;
+  overflow: visible;
+
+  * {
+    overflow: visible !important;
+  }
+
+  input {
+    padding: 10px;
+    float: right;
+    margin-bottom: 20px;
+    width: 250px;
+    border: 1px solid #ccc;
+  }
+}
+
+.importer-empty,
+.loading {
+  @include flex();
+  justify-content: center;
+  height: 100%;
+}
+
+.importer-empty h2 {
+  overflow: hidden;
+}
+
+.importer-row {
+  width: 100%;
+  margin: 0 !important;
+}
+
+.importer-inner-container {
+  background-color: #fff;
+  padding: 20px 10px;
+  box-shadow: 2px 2px 50px 10px rgba(0, 0, 0, 0.05);
+  min-height: 100px;
+  margin: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.importer-inner-container {
+  @include flex();
+
+  h2 {
+    margin-bottom: 15px;
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .importer {
+    padding: 0;
+  }
+  .importer-col {
+    margin-bottom: 40px;
+  }
+}

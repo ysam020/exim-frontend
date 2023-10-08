@@ -1,0 +1,42 @@
+.login-row {
+  height: 100%;
+}
+
+.login-left-col {
+  background-image: url("../assets/images/LeftPage.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-right-col {
+  background-image: url("../assets/images/RightPage.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-left-col-inner-container {
+  transform: translateY(-150px);
+}
+
+.login-right-col-inner-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-input {
+  .MuiInputBase-root {
+    background-color: #fff !important;
+  }
+}

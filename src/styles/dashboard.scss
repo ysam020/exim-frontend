@@ -1,0 +1,88 @@
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-info h4 {
+  flex: 1;
+}
+
+.dashboard-btn {
+  background-color: #273041;
+  outline: none;
+  border: none;
+  color: #fff;
+  padding: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.register-form button {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.MuiInputBase-input.MuiFilledInput-input.MuiInputBase-inputSizeSmall.css-c5v1qu-MuiInputBase-input-MuiFilledInput-input {
+  height: 100%;
+}
+
+.dashboard-container {
+  padding: 0;
+  .row {
+    margin: 0;
+  }
+
+  .jobs-overview {
+    margin-top: 20px;
+
+    .jobs-overview-item {
+      flex: 1;
+      padding: 0;
+    }
+
+    .jobs-overview-item-inner {
+      display: flex;
+      align-items: center;
+      box-shadow: 2px 2px 50px 10px rgba(0, 0, 0, 0.05);
+      margin: 10px;
+      padding: 10px;
+      background-color: #fff;
+
+      h3 {
+        display: block;
+        color: #6e6e6f;
+      }
+      p {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .dashboard-col {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    .dashboard-col-inner {
+      padding: 20px !important;
+      box-shadow: 2px 2px 50px 10px rgba(0, 0, 0, 0.05);
+      margin: 10px;
+      background-color: #fff;
+      width: 100%;
+      margin: 10px;
+    }
+  }
+
+  .dashboard-row {
+    width: 100%;
+  }
+  .dashboard-col {
+    padding: 0;
+  }
+}
+
+.apexcharts-legend-series {
+  text-align: left !important;
+}

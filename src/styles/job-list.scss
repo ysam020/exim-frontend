@@ -1,0 +1,95 @@
+.jobs-list-header {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+
+  h5 {
+    flex: 1;
+  }
+
+  select,
+  input {
+    margin-right: 10px;
+    padding: 5px;
+  }
+
+  button {
+    padding: 5px 10px;
+    box-sizing: border-box;
+    background-color: #273041;
+    border: none;
+    outline: none;
+    color: #fff;
+  }
+}
+
+.search-job-input {
+  padding: 10px;
+  float: right;
+  margin-bottom: 20px;
+  width: 250px;
+  border: 1px solid #ccc;
+}
+
+.custom-clearance-completed {
+  background-color: #ccffff;
+}
+
+.clearance-pending {
+  background-color: #8eaadb;
+}
+
+.arrival-pending {
+  background-color: #f4b083;
+}
+
+.sea-igm-filed {
+  background-color: #ffff66;
+}
+
+.discharge {
+  background-color: #f4b183;
+}
+
+.discharge:hover {
+  background-color: #f4b183 !important;
+}
+
+.eta {
+  background-color: #fff;
+}
+
+.custom-clearance-completed:hover {
+  background-color: #ccffff !important;
+}
+
+.clearance-pending:hover {
+  background-color: #8eaadb !important;
+}
+
+.arrival-pending:hover {
+  background-color: #f4b083 !important;
+}
+
+.sea-igm-filed:hover {
+  background-color: #ffff66 !important;
+}
+
+.eta:hover {
+  background-color: #fff !important;
+}
+
+@media screen and (max-width: 992px) {
+  .jobs-list-header {
+    flex-direction: column;
+
+    h5 {
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    select {
+      margin-bottom: 10px;
+    }
+  }
+}
